@@ -12,9 +12,12 @@ import com.chinaliyq.spring.beans.Person;
  **/
 public class App {
     public static void main(String[] args) {
+        //放入配置路径
         ClassPathXmlApplicationContext cpxac =
                 new ClassPathXmlApplicationContext("/resources/springframework.xml");
-        Person bean = cpxac.getBean(Person.class);
-        System.out.println(bean);
+        Person person1 = cpxac.getBean("1",Person.class);
+        final Person person2 = cpxac.getBean("2", Person.class);
+        System.out.println(person1);
+        System.out.println(person2);
     }
 }

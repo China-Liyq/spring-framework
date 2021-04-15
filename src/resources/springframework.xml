@@ -2,10 +2,16 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    //id 作为对象标识，获取对象使用id
     <bean id="1" class="com.chinaliyq.spring.beans.Person">
         <property name="name" value="张三"/>
         <property name="sex" value="男"/>
-        <property name="age" value="11"/>
+        <property name="age" value="31"/>
+    </bean>
+    <bean id="2" class="com.chinaliyq.spring.beans.Person">
+        <property name="name" value="验证"/>
+        <property name="sex" value="女"/>
+        <property name="age" value="18"/>
     </bean>
 
 </beans>
